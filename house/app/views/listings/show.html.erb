@@ -1,0 +1,22 @@
+<p>
+  <strong>Address:</strong>
+  <%= @listing.address %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @listing.price %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @listing.description %>
+</p>
+<h2>Comments:</h2>
+<%= render @listing.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'All Listings', listings_path %> |
+<%= link_to 'Home', root_path %>

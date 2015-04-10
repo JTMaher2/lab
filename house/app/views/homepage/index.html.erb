@@ -1,6 +1,7 @@
 <div align="center">
 <h1>Welcome to Drew's Houses and Stuff</h1>
-<a href="#">Find local Listings</a>
+<%= link_to 'Show all listings', controller: 'listings' %>
+<%= link_to 'Create a new listing', new_listing_path %>
 </br>
   <%= image_tag("drew.jpg", :alt => "Drew")%>
 
